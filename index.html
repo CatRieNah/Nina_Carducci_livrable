@@ -3,18 +3,51 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>La talentueuse photographe Nina Carducci à Bordeaux</title>
-		<meta name="description" content="Découvrez les oeuvres de Nina Carducci en photographie,que ce soit des portraits professionnel ou des évènements marquant de votre vie.">		
-		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-		<link rel="stylesheet" href="./assets/style.css">
+		<title>Nina Carducci</title>
+		<meta name="title" content="La talentueuse photographe Nina Carducci à Bordeaux" />
+		<meta name="description" content="Découvrez les oeuvres de Nina Carducci en photographie et ses services,que ce soit des portraits professionnel ou des évènements marquant de votre vie.">		
+		<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="./assets/style.min.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/2fda15efa0.js" crossorigin="anonymous"></script>
-		<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
-		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-		<script src="./assets/maugallery.js"></script>
-		<script src="./assets/scripts.js"></script>
+		<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
+		<script src="./assets/maugallery.js" defer></script>
+		<script src="./assets/scripts.js" defer></script>
+		<!--Schema.org-->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "LocalBusiness",
+				"name": "Nina Carducci",  
+				"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "68 avenue Alsace-Lorraine",
+				"addressLocality": "Bordeaux",
+				"postalCode": "33200",
+				"addressCountry": "FR"
+				},
+				"telephone": "+33556677889",
+				"openingHours": "Mo-Fr 10:00-19:00",
+				"priceRange": "€100 - €400",
+    			"image": "https://catrienah.github.io/Nina_Carducci_livrable/assets/images/nina.png"
+			}
+		</script>
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://catrienah.github.io/Nina_Carducci_livrable/" />
+	<meta property="og:title" content="La talentueuse photographe Nina Carducci à Bordeaux" />
+	<meta property="og:description" content="Découvrez les oeuvres de Nina Carducci en photographie,que ce soit des portraits professionnel ou des évènements marquant de votre vie." />
+	<meta property="og:image" content="https://catrienah.github.io/Nina_Carducci_livrable/assets/images/nina.png" />
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image" />
+	<meta property="twitter:url" content="https://catrienah.github.io/Nina_Carducci_livrable/" />
+	<meta property="twitter:title" content="La talentueuse photographe Nina Carducci à Bordeaux" />
+	<meta property="twitter:description" content="Découvrez les oeuvres de Nina Carducci en photographie,que ce soit des portraits professionnel ou des évènements marquant de votre vie." />
+	<meta property="twitter:image" content="https://catrienah.github.io/Nina_Carducci_livrable/assets/images/nina.png" />
 	</head>
 	<body>
 		<header class="top-header">
@@ -79,6 +112,8 @@
 									./assets/images/slider/ryoji-iwata_tablet.webp 1000w,
 									./assets/images/slider/ryoji-iwata_mobile.webp 650w,
 								"
+								width="1920"
+								height="700"
 								sizes="(max-width:1920px) 100%, (max-width:1180px) 100%, (max-width:1000px) 100%,(max-width:650px) 100%"
 								class="d-block w-100" 
 								alt="Un homme en costume noir, portant un sac noir marche sur un passage piéton."
@@ -93,8 +128,11 @@
 									./assets/images/slider/nicholas-green_tablet.webp 1000w,
 									./assets/images/slider/nicholas-green_mobile.webp 650w,
 								"
+								width="1920"
+								height="700"
 								sizes="(max-width:1920px) 100%, (max-width:1180px) 100%, (max-width:1000px) 100%,(max-width:650px) 100%"
 								class="d-block w-100" 
+								loading="lazy"
 								alt="Une ambiance des jeunes pendant un concert "
 							>
 						</div>
@@ -107,8 +145,11 @@
 									./assets/images/slider/edward-cisneros_tablet.webp 1000w,
 									./assets/images/slider/edward-cisneros_mobile.webp 650w,
 								"
+								width="1920"
+								height="700"
 								sizes="(max-width:1920px) 100%, (max-width:1180px) 100%, (max-width:1000px) 100%,(max-width:650px) 100%"
 								class="d-block w-100" 
+								loading="lazy"
 								alt="Un nouveau marié s'embrassant au milieu de ses invités"
 							>
 						</div>
@@ -143,6 +184,8 @@
 							./assets/images/nina_tablet.webp 1000w,
 							./assets/images/nina_mobile.webp 650w,
 						"
+						width="500"
+						height="500"
 						sizes="(max-width:1920px) 100%, (max-width:1180px) 100%, (max-width:1000px) 100%,(max-width:650px) 100%"
 						alt="Portrait de Nina Carducci"
 					>
@@ -374,6 +417,9 @@
 								./assets/images/camera_mobile.webp 650w,
 							"
 							sizes="(max-width:1920px) 100%, (max-width:1180px) 100%, (max-width:1000px) 100%,(max-width:650px) 100%"
+							width="500"
+							height="500"
+							loading="lazy"
 							alt="Un appareil photo numérique"
 						>
 					</div>
